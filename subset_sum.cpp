@@ -3,7 +3,7 @@
 #include <vector>
 #include <cassert>
 using namespace std;
- 
+
 //#define NOT_IMPLMENTED(exp) do {if(!exp) assert(false);} while(0)
 
 //end not-inclusive
