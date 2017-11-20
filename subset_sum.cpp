@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
+#include <map>
 #include <cassert>
+#include <cstring>
 using namespace std;
 
 //#define NOT_IMPLMENTED(exp) do {if(!exp) assert(false);} while(0)
@@ -63,15 +65,35 @@ bool naive(vector<int>& v)
     return false;
 }
 
+
+bool dp(vector<int>& v)
+{
+    map<int, bool> m, m2;
+    for(int i=0;i<(int)v.size();i++)
+    {
+        m2 = m;
+        for(auto it=m.begin();it!=m.end();it++)
+        {
+            m2[it->first + v[i]] = true;
+        }
+        m2[v[i]] = true;
+        m = m2;
+    }
+    if (m[0]) return true;
+    return false;
+
+}
+
 int main()
 {
-    for(int i=0;i<10000;i++)
+    for(int i=0;i<100000;i++)
     {
         vector<int> v = get_random_array(-20, 20, 6);
         print(v);
         bool r1 = naive(v);
         bool r2 = recursive(v);
-        assert(r1 == r2);
+        bool r3 = dp(v);
+        assert(r1 == r2 && r2 == r3);
         printf("result: %s\n", r1?"possible":"impossible");
     }
 
