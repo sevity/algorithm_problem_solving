@@ -6,8 +6,14 @@
 #include <cstring>
 using namespace std;
 
-//#define NOT_IMPLMENTED(exp) do {if(!exp) assert(false);} while(0)
 
+// problem statement
+// implement a function which receive vector<int> v
+// and return true if some elements of v can sum up to zero
+// ex) v: {3, 7, 2, -5} ==> {3, 2, -5} can be sum up to zero ==> return true
+
+
+//#define NOT_IMPLMENTED(exp) do {if(!exp) assert(false);} while(0)
 //end not-inclusive
 //[start, end)
 //if b_allow_duplicate is false, elements will not duplicated
