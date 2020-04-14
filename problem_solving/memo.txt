@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#ifdef WIN32
+#ifndef ONLINE_JUDGE
 #include "dbg.h"  // https://github.com/sharkdp/dbg-macro
 #else
 #define dbg(...)
@@ -14,13 +14,14 @@ const int INF = (int)1e9;
 
 int32_t main()
 {
-ios::sync_with_stdio(0);cin.tie(0);
-#ifdef WIN32
-freopen("input.txt", "rt", stdin);
+    ios::sync_with_stdio(0); cin.tie(0);
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "rt", stdin);
 #endif
 
     return 0;
 }
+
 
 
 
