@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+#ifdef WIN32
+#include "dbg.h"  // https://github.com/sharkdp/dbg-macro
+#else
+#define dbg(...)
+#endif
+//#define int long long
+using namespace std;
+#define REP(i,n) for(int i=0;i<(int)(n);i++)
+#define REP1(i,n) for(int i=1;i<=(int)(n);i++)
+using vi = vector<int>;
+typedef long long ll;
+const int INF = (int)1e9;
+
+int32_t main()
+{
+ios::sync_with_stdio(0);cin.tie(0);
+#ifdef WIN32
+freopen("input.txt", "rt", stdin);
+#endif
+
+    return 0;
+}
+
+
+
+-----------------------------------------------------------
+
+
+#ifdef WIN32
+freopen("input.txt", "rt", stdin);
+#endif
+
+------------------------------------------------------------
+//experimental
+#define M0(r) memset(r, 0, sizeof(r))
+#define TIME (chrono::steady_clock::now().time_since_epoch().count())
+using vi = vector<int>;
+#define done(r, ...) exit(0 * printf(r))
+#define ALL(r)(r).begin(),(r).end()
+#define RALL(r)(r).rbegin(),(r).rend()
