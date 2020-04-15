@@ -144,6 +144,7 @@
     <Text Include="memo.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\treefy.cpp" />
     <ClCompile Include="problem_solving.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
