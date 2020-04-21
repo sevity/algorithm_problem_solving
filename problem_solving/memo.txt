@@ -1,14 +1,17 @@
 #include <bits/stdc++.h>
+
 #ifndef ONLINE_JUDGE
 #include "dbg.h"  // https://github.com/sharkdp/dbg-macro
 #else
 #define dbg(...)
 #endif
+
 //#define int long long
 using namespace std;
 #define REP(i,n) for(int i=0;i<(int)(n);i++)
 #define REP1(i,n) for(int i=1;i<=(int)(n);i++)
 using vi = vector<int>;
+using vs = vector<string>;
 using vvi = vector<vi>;
 #define all(r) (r).begin(),(r).end()
 typedef long long ll;
