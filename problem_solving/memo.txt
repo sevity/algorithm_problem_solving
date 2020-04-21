@@ -40,5 +40,4 @@ freopen("input.txt", "rt", stdin);
 #define TIME (chrono::steady_clock::now().time_since_epoch().count())
 using vi = vector<int>;
 #define done(r, ...) exit(0 * printf(r))
-#define ALL(r)(r).begin(),(r).end()
 #define RALL(r)(r).rbegin(),(r).rend()
