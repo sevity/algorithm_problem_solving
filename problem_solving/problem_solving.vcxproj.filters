@@ -12,4 +12,10 @@
       <UniqueIdentifier>{8f77bd2d-969f-4dd8-9286-7279f40087a2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="problem_solving.h" />
+  </ItemGroup>
 </Project>
